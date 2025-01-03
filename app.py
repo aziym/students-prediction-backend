@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load the model
-model = joblib.load('model/svm_model.pkl')
+model = joblib.load('model/education_model.pkl')
 
 # Define the prediction route
 @app.route('/predict', methods=['POST'])
